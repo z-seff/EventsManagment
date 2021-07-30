@@ -1,0 +1,354 @@
+{
+  "contractName": "IConsumerEvent",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "eventContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_ticketName",
+          "type": "string"
+        }
+      ],
+      "name": "buyTicket",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"eventContractAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_ticketName\",\"type\":\"string\"}],\"name\":\"buyTicket\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IConsumerEvent.sol\":\"IConsumerEvent\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IConsumerEvent.sol\":{\"keccak256\":\"0x1fa55dcd0978c7fa536b89fdae893d2966287c130b69a9cf8095ce37d0b74c5d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5c57ac77aef8f9a2480c864026330d8e9d5b2dbe94e49f7da23621c8bf8766a0\",\"dweb:/ipfs/QmUebhd9rmYwcLZfPrkp6iwhbZwTgxdFzq5nsNJDyba5Ky\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface IConsumerEvent {\r\n   function buyTicket (address eventContractAddress, string memory _ticketName) external payable returns (uint256);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\User\\Desktop\\Ethereum\\EventsManagment\\contracts\\interfaces\\IConsumerEvent.sol",
+  "ast": {
+    "absolutePath": "/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IConsumerEvent.sol",
+    "exportedSymbols": {
+      "IConsumerEvent": [
+        626
+      ]
+    },
+    "id": 627,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 616,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 626,
+        "linearizedBaseContracts": [
+          626
+        ],
+        "name": "IConsumerEvent",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "9625001f",
+            "id": 625,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyTicket",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 621,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 618,
+                  "mutability": "mutable",
+                  "name": "eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "111:28:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 617,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 620,
+                  "mutability": "mutable",
+                  "name": "_ticketName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "141:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 619,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "110:57:4"
+            },
+            "returnParameters": {
+              "id": 624,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 623,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "194:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 622,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:9:4"
+            },
+            "scope": 626,
+            "src": "91:112:4",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 627,
+        "src": "60:146:4"
+      }
+    ],
+    "src": "33:175:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IConsumerEvent.sol",
+    "exportedSymbols": {
+      "IConsumerEvent": [
+        626
+      ]
+    },
+    "id": 627,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 616,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 626,
+        "linearizedBaseContracts": [
+          626
+        ],
+        "name": "IConsumerEvent",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "9625001f",
+            "id": 625,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyTicket",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 621,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 618,
+                  "mutability": "mutable",
+                  "name": "eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "111:28:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 617,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 620,
+                  "mutability": "mutable",
+                  "name": "_ticketName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "141:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 619,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "110:57:4"
+            },
+            "returnParameters": {
+              "id": 624,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 623,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 625,
+                  "src": "194:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 622,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:9:4"
+            },
+            "scope": 626,
+            "src": "91:112:4",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 627,
+        "src": "60:146:4"
+      }
+    ],
+    "src": "33:175:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-07-30T16:15:34.465Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

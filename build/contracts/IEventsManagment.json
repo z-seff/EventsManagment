@@ -1,0 +1,1078 @@
+{
+  "contractName": "IEventsManagment",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_eventContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_ticketName",
+          "type": "string"
+        }
+      ],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_eventContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEventName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_eventContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEventDescription",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_eventContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEventDates",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_eventContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEventPlace",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_eventContractAddress\",\"type\":\"address\"}],\"name\":\"getEventDates\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_eventContractAddress\",\"type\":\"address\"}],\"name\":\"getEventDescription\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_eventContractAddress\",\"type\":\"address\"}],\"name\":\"getEventName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_eventContractAddress\",\"type\":\"address\"}],\"name\":\"getEventPlace\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_eventContractAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_ticketName\",\"type\":\"string\"}],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IEventsManagment.sol\":\"IEventsManagment\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IEventsManagment.sol\":{\"keccak256\":\"0x1948a649beffeb824cd8e9bc3963a29290fb2007414997d4948feb01af262675\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f3557ce138a984a389d9296b472ff2bbbac5c165a44b9a746e8dfe155d7e534b\",\"dweb:/ipfs/QmS53Aepf5ehidsWrCPDXaeSEZWrcZZrkTbxspXXoHF7DF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface IEventsManagment {\r\n    function getPrice(address _eventContractAddress, string memory _ticketName) external returns (int);\r\n\r\n    function getEventName (address _eventContractAddress) external view returns (string memory);\r\n\r\n    function getEventDescription (address _eventContractAddress) external view returns (string memory);\r\n\r\n    function getEventDates (address _eventContractAddress) external view returns (string memory);\r\n\r\n    function getEventPlace (address _eventContractAddress) external view returns (string memory);\r\n\r\n    /* function getNftCollectionAddress (address _eventContractAddress) external view returns (address);\r\n\r\n    function getEventStatus (address _eventContractAddress) external view returns (bool); */\r\n}\r\n",
+  "sourcePath": "C:\\Users\\User\\Desktop\\Ethereum\\EventsManagment\\contracts\\interfaces\\IEventsManagment.sol",
+  "ast": {
+    "absolutePath": "/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IEventsManagment.sol",
+    "exportedSymbols": {
+      "IEventsManagment": [
+        666
+      ]
+    },
+    "id": 667,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 628,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 666,
+        "linearizedBaseContracts": [
+          666
+        ],
+        "name": "IEventsManagment",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "76977a3a",
+            "id": 637,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 633,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 630,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "112:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 629,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "112:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 632,
+                  "mutability": "mutable",
+                  "name": "_ticketName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "143:25:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 631,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "143:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "111:58:5"
+            },
+            "returnParameters": {
+              "id": 636,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 635,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "188:3:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 634,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "188:3:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "187:5:5"
+            },
+            "scope": 666,
+            "src": "94:99:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "567872df",
+            "id": 644,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 639,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "224:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 638,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "224:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "223:31:5"
+            },
+            "returnParameters": {
+              "id": 643,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 642,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "278:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 641,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "278:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "277:15:5"
+            },
+            "scope": 666,
+            "src": "201:92:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "0a0994aa",
+            "id": 651,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventDescription",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 647,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 646,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 651,
+                  "src": "331:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 645,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:31:5"
+            },
+            "returnParameters": {
+              "id": 650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 649,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 651,
+                  "src": "385:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 648,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:15:5"
+            },
+            "scope": 666,
+            "src": "301:99:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "ec415097",
+            "id": 658,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventDates",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 654,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 653,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 658,
+                  "src": "432:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 652,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "432:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "431:31:5"
+            },
+            "returnParameters": {
+              "id": 657,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 656,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 658,
+                  "src": "486:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 655,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "486:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "485:15:5"
+            },
+            "scope": 666,
+            "src": "408:93:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9eb5d03e",
+            "id": 665,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventPlace",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 661,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 660,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 665,
+                  "src": "533:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 659,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "532:31:5"
+            },
+            "returnParameters": {
+              "id": 664,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 663,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 665,
+                  "src": "587:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 662,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "587:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "586:15:5"
+            },
+            "scope": 666,
+            "src": "509:93:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 667,
+        "src": "60:749:5"
+      }
+    ],
+    "src": "33:778:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/User/Desktop/Ethereum/EventsManagment/contracts/interfaces/IEventsManagment.sol",
+    "exportedSymbols": {
+      "IEventsManagment": [
+        666
+      ]
+    },
+    "id": 667,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 628,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 666,
+        "linearizedBaseContracts": [
+          666
+        ],
+        "name": "IEventsManagment",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "76977a3a",
+            "id": 637,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 633,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 630,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "112:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 629,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "112:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 632,
+                  "mutability": "mutable",
+                  "name": "_ticketName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "143:25:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 631,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "143:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "111:58:5"
+            },
+            "returnParameters": {
+              "id": 636,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 635,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 637,
+                  "src": "188:3:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 634,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "188:3:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "187:5:5"
+            },
+            "scope": 666,
+            "src": "94:99:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "567872df",
+            "id": 644,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 639,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "224:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 638,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "224:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "223:31:5"
+            },
+            "returnParameters": {
+              "id": 643,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 642,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "278:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 641,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "278:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "277:15:5"
+            },
+            "scope": 666,
+            "src": "201:92:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "0a0994aa",
+            "id": 651,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventDescription",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 647,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 646,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 651,
+                  "src": "331:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 645,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "331:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "330:31:5"
+            },
+            "returnParameters": {
+              "id": 650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 649,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 651,
+                  "src": "385:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 648,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:15:5"
+            },
+            "scope": 666,
+            "src": "301:99:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "ec415097",
+            "id": 658,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventDates",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 654,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 653,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 658,
+                  "src": "432:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 652,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "432:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "431:31:5"
+            },
+            "returnParameters": {
+              "id": 657,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 656,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 658,
+                  "src": "486:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 655,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "486:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "485:15:5"
+            },
+            "scope": 666,
+            "src": "408:93:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9eb5d03e",
+            "id": 665,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEventPlace",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 661,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 660,
+                  "mutability": "mutable",
+                  "name": "_eventContractAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 665,
+                  "src": "533:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 659,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "532:31:5"
+            },
+            "returnParameters": {
+              "id": 664,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 663,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 665,
+                  "src": "587:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 662,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "587:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "586:15:5"
+            },
+            "scope": 666,
+            "src": "509:93:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 667,
+        "src": "60:749:5"
+      }
+    ],
+    "src": "33:778:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-07-30T16:15:34.467Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
